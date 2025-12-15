@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Input</title>
+</head>
+<body>
+    <form action="{{ url_for('submit') }}" method="POST">
+        <label for="text1">النص الأول (من):</label>
+        <input type="text" id="text1" name="text1"><br><br>
+        
+        <label for="text2">النص الثاني (إلى):</label>
+        <input type="text" id="text2" name="text2"><br><br>
+
+        <label for="text3">الغرض:</label>
+        <input type="text" id="text3" name="text3"><br><br>
+
+        <label for="date">التاريخ:</label>
+        <input type="text" id="date" name="date"><br><br>
+
+        <label for="price">السعر:</label>
+        <input type="text" id="price" name="price"><br><br>
+
+        <label for="to_number">الرقم:</label>
+        <input type="text" id="to_number" name="to_number"><br><br>
+
+        <button type="submit">إرسال</button>
+    </form>
+</body>
+</html>
